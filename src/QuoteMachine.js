@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 
+
+
 const quotes = [
     {
       text: "That which does not kill us makes us stronger.",
