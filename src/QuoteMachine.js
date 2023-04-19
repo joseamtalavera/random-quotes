@@ -52,9 +52,10 @@ const QuoteMachine = () => {
       <button id="new-quote" className="btn btn-primary" onClick={getRandomQuote}>
         New Quote
       </button>
-      <a id="tweet-quote" href="#" onClick={tweetQuote}>
+      {/* eslint-disable-next-line */}
+      <a id="tweet-quote" href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`"${quote.text}" - ${quote.author}`)}`} onClick={tweetQuote}>
         <i className="fa fa-twitter"></i> Tweet Quote
-      </a>
+      </a> 
     </div>
   );
 };
