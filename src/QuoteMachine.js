@@ -33,7 +33,7 @@ const quotes = [
 
 
 const QuoteMachine = () => {
-  const [quote, setQuote] = useState(quotes[0]);
+  const [quote, setQuote] = useState(quotes[1]);
 
   const getRandomQuote = () => {
     const randomIndex = Math.floor(Math.random() * quotes.length);
